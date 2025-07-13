@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 80%;
+    margin: 100px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Heading */
+.heading{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px 0 10px 0;
+}
+
+/* Add Expense Form */
+.expense-form{
+    display: flex;
+    flex-direction: row;
+    gap: 7px; 
+    margin: 30px 0 ;  
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.expense-form input, .expense-form select, .expense-form button{
+    height: 40px;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 5px;
+    padding: 5px ;
+}
+#expenseName, #amount{
+    width: 23.5%;
+}
+#category, #date{
+    width: 19%;
+}
+#addExpense{
+    width: 15%;
+    background-color: rgb(13, 224, 13);
+}
+
+/* Expense list */
+.expense-list{
+    margin-bottom: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+thead{
+    background-color: rgb(239, 239, 239);
+    text-align: left;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid rgb(183, 183, 183);
+}
+
+/* Total Expense */
+.total-expense{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

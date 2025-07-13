@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Expense Tracker</h1>
+    <div class="container">
+        <!-- Heading "Expense Tracker" -->
+        <div class="heading">
+            <h1>Expense Tracker</h1>
+        </div>
+
+        <!--Add Expense Fore  -->
+        <div class="expenseForm">
+            <form action="" class="expense-form" >
+                
+                    <input type="text" placeholder="Expense Name" name="expenseName" id="expenseName" required>
+              
+                    <input type="number" placeholder="Amount" name="amount" id="amount" required>
+              
+                    <select name="category" id="category"  required>
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="Food">Food</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Other">Other</option>
+                    </select>
+            
+                    <input type="date" name="date" id="date" required>
+              
+                    <button type="submit" id="addExpense">Add Expense</button>
+            </form>
+        </div>
+
+        <!-- Show Expense list -->
+        <div class="expense-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amout</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Food</td>
+                        <td>2000</td>
+                        <td>Food</td>
+                        <td>10/2/25</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>2000</td>
+                        <td>Food</td>
+                        <td>10/2/25</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Total Expense -->
+        <div class="total-expense">
+            <h2>Total Expense: $<span id="totalAmount">0</span></h2>
+    </div>
 </body>
 </html>
