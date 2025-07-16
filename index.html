@@ -15,7 +15,7 @@
 
         <!--Add Expense Fore  -->
         <div class="expenseForm">
-            <form action="" class="expense-form" >
+            <form action="" class="expense-form" id="expense-form">
                 
                     <input type="text" placeholder="Expense Name" name="expenseName" id="expenseName" required>
               
@@ -48,21 +48,8 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Food</td>
-                        <td>2000</td>
-                        <td>Food</td>
-                        <td>10/2/25</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Food</td>
-                        <td>2000</td>
-                        <td>Food</td>
-                        <td>10/2/25</td>
-                        <td></td>
-                    </tr>
+                <tbody id="tbody">
+                    
                 </tbody>
             </table>
         </div>
@@ -70,5 +57,6 @@
         <div class="total-expense">
             <h2>Total Expense: $<span id="totalAmount">0</span></h2>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
